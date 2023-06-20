@@ -11,29 +11,12 @@ class Brain
 
 	public:
 		Brain();
-		Brain operator=(Brain const &src);
+		Brain& operator=(Brain const &src);
 		Brain(Brain const &rhs);
 		~Brain();
 
-		std::string getIdea(int index);
-		std::string setIdea(int index);
-
+		std::string	getIdea(int index) const;
+		void		setIdea(int index, std::string const &idea);
 };
-
-Brain::Brain(){}
-
-Brain::~Brain(){}
-
-std::string Brain::getIdea(int index)
-{
-	if (index >= 0 && index <= 100)
-	{
-		return (this->_ideas)[index];
-
-	}
-
-}
-
-
 
 #endif
