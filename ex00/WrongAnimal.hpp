@@ -1,5 +1,5 @@
-#ifndef WrongAnimal_HPP
-# define WrongAnimal_HPP
+#ifndef WRONG_ANIMAL_HPP
+# define WRONG_ANIMAL_HPP
 
 # include <iostream>
 
@@ -13,7 +13,7 @@ class WrongAnimal
 		virtual ~WrongAnimal();
 
 		std::string		getType() const;
-		virtual void	makeSound() const;
+		void			makeSound() const;
 
 	protected :
 		std::string _type;

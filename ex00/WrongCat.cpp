@@ -1,27 +1,27 @@
-#include "Cat.hpp"
+#include "WrongCat.hpp"
 
-Cat::Cat() : Animal("Cat")
+WrongCat::WrongCat() : WrongAnimal("WrongCat")
 {
-	std::cout << "Default Cat constructor called." << std::endl;
+	std::cout << "Default WrongCat constructor called." << std::endl;
 }
 
-Cat::~Cat()
+WrongCat::~WrongCat()
 {
-	//std::cout << "Cat destructor called." << std::endl;
+	//std::cout << "WrongCat destructor called." << std::endl;
 }
 
-Cat& Cat::operator=(Cat const &rhs)
+WrongCat& WrongCat::operator=(WrongCat const &rhs)
 {
 	this->_type = rhs.getType();
 	return *this;
 }
 
-Cat::Cat(Cat const &src)
+WrongCat::WrongCat(WrongCat const &src)
 {
 	*this = src;
 }
 
-void Cat::makeSound() const
+void WrongCat::makeSound() const
 {
 	std::cout << "Miaow Miaow !!" << std::endl;
 }
