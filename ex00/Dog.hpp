@@ -9,7 +9,10 @@ class Dog : public Animal
 		Dog();
 		Dog& operator=(Dog const &rhs);
 		Dog(Dog const &src);
-		~Dog();
+		virtual ~Dog();
+
+		virtual void		makeSound() const;
+
 	
 };
 
