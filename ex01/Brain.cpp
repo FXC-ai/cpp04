@@ -1,16 +1,14 @@
 #include "Brain.hpp"
 
-
 Brain::Brain()
 {
-	//std::cout << "Hello" <<std::endl;
+	//std::cout << "Default Brain constructor called." <<std::endl;
 }
 
 Brain::~Brain()
 {
-	//std::cout << "poire" << std::endl;
+	//std::cout << "Brain destructor called." << std::endl;
 }
-
 
 Brain& Brain::operator=(Brain const &src)
 {
@@ -36,4 +34,9 @@ void Brain::setIdea(int index, std::string const &idea)
 	{
 		this->_ideas[index] = idea;
 	}
+}
+
+Brain::Brain(Brain const &src)
+{
+	*this = src;
 }
