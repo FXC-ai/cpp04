@@ -1,6 +1,6 @@
-SRCS = main.cpp Brain.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
+SRCS = main.cpp Brain.cpp A_Animal.cpp Dog.cpp Cat.cpp
 
-NAME = Brain
+NAME = Abstract
 
 OBJS := $(SRCS:%.cpp=%.o)
 

@@ -23,7 +23,7 @@ Animal& Animal::operator=(Animal const &rhs)
 
 Animal::Animal(Animal const &src)
 {
-	//std::cout << "Copy Animal constructor called." << std::endl;
+	std::cout << "Copy Animal constructor called." << std::endl;
 	*this = src;
 }
 
