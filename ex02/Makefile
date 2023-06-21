@@ -1,4 +1,4 @@
-SRCS = main.cpp Brain.cpp A_Animal.cpp Dog.cpp Cat.cpp
+SRCS = main.cpp Brain.cpp A_Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
 
 NAME = Abstract
 
