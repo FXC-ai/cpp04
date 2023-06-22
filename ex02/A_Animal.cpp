@@ -24,7 +24,7 @@ A_Animal& A_Animal::operator=(A_Animal const &rhs)
 A_Animal::A_Animal(A_Animal const &src)
 {
 	*this = src;
-	//std::cout << "Copy A_Animal constructor called." << std::endl;
+	std::cout << "Copy A_Animal constructor called." << std::endl;
 }
 
 A_Animal::~A_Animal()

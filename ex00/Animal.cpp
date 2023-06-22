@@ -29,7 +29,7 @@ Animal::Animal(Animal const &src)
 
 Animal::~Animal()
 {
-	//std::cout << "Destructor called." << std::endl;
+	std::cout << "Destructor called." << std::endl;
 }
 
 void Animal::makeSound() const

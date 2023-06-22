@@ -2,12 +2,12 @@
 
 Brain::Brain()
 {
-	//std::cout << "Default Brain constructor called." <<std::endl;
+	std::cout << "Default Brain constructor called." <<std::endl;
 }
 
 Brain::~Brain()
 {
-	//std::cout << "Brain destructor called." << std::endl;
+	std::cout << "Brain destructor called." << std::endl;
 }
 
 Brain& Brain::operator=(Brain const &src)
